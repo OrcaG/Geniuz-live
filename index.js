@@ -85,9 +85,6 @@ var sendLastOperation = function(session_id, socket){
           socket.emit('operation-update', {data: data})
         }
 
-        else {
-          callback(false);
-        }
 
       });
 
