@@ -96,6 +96,8 @@ var sendLastOperation = function(session_id, socket){
 
 }
 
+realtime.origins('*:*');
+
 realtime.on('connection', (socket) => {
 
   socket.liveSession = null;
